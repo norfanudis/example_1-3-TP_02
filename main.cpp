@@ -25,7 +25,7 @@ int main()
     while (true) {
 
         if ( gpio_read(&gasDetector) || gpio_read(&overTempDetector) ) {
-            alarmState = ON;
+            alarmState = ON;    //Comentario
         }
 
         alarmLed = alarmState;
